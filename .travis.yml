@@ -1,0 +1,10 @@
+language: java
+
+jdk: oraclejdk8
+
+services: mysql
+
+before-install:
+  - mysql -uroot -e "grant all on belajar *.* root@localhost identified by 'root'"
+  - mysql -uroot -e "drop database if exist belajar"
+  - mysql -uroot -e "create database belajar"
