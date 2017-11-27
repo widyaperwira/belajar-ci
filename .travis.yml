@@ -4,6 +4,12 @@ jdk: oraclejdk8
 
 services: mysql
 
+test:
+  adapter: mysql2
+  database: belajar
+  username: root
+  encoding: utf8
+
 before-install:
   - mysql -u root -e "grant all on belajar.* root@localhost identified by 'root'"
   - mysql -u root -e "drop database if exist belajar"
