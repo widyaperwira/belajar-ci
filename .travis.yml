@@ -5,6 +5,6 @@ jdk: oraclejdk8
 services: mysql
 
 before-install:
-  - mysql -u root -e "grant all on belajar *.* root@localhost"
+  - mysql -u root -e "grant all on belajar.* root@localhost identified by 'root'"
   - mysql -u root -e "drop database if exist belajar"
   - mysql -u root -e "create database belajar"
