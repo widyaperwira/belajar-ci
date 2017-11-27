@@ -137,6 +137,7 @@ public class ProductControllerTests {
 //
     @Test
     public void testDelete() {
+        //test
         RestAssured.delete(BASE_URL+"/abc123")
                 .then()
                 .statusCode(200);
