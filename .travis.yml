@@ -9,4 +9,4 @@ services:
 before-install:
 #  - mysql -e "grant all privileges on belajar.* to 'root'@'localhost'"
 #  - mysql -e "drop database if exist belajar"
-  - mysql -e "create database if not exists belajar"
+  - mysql -e "create database belajar"
