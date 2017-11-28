@@ -7,6 +7,6 @@ services:
   - mysql
 
 before-script:
-  - mysql -e "drop database if exist belajar;"
-  - mysql -e "create database belajar;"
-  - mysql -e "grant all privileges on *.* to 'root'@'localhost';"
+  - mysql -uroot -e "drop database if exist belajar;"
+  - mysql -uroot -e "create database belajar;"
+  - mysql -uroot -e "grant all privileges on *.* to 'root'@'localhost';"
