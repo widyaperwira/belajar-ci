@@ -6,7 +6,7 @@ jdk:
 services:
   - mysql
 
-before-script:
-  - mysql -e "drop database if exist belajar"
-  - mysql -e "create database belajar"
-  - mysql -e "grant all privileges on belajar.* to 'root'@'localhost'"
+before-install:
+  - mysql -e "drop database if exist belajar;"
+  - mysql -e "create database belajar;"
+  - mysql -e "grant all privileges on *.* to 'root'@'localhost';"
