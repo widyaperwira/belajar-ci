@@ -7,6 +7,6 @@ services:
   - mysql
 
 before-install:
-  - mysql -u root -e "grant all on *.* root@localhost"
+  - mysql -u root -e "grant all privileges on *.* root@localhost"
   - mysql -u root -e "drop database if exist belajar"
   - mysql -u root -e "create database belajar"
