@@ -6,11 +6,7 @@ jdk:
 services:
   - mysql
 
-dist: trusty
-
-sudo: required
-
 before-install:
-#  - mysql -e "drop database if exist belajar"
-  - mysql -e "create database if not exists belajar"
   - mysql -e "grant all privileges on belajar.* to 'root'@'localhost'"
+  - mysql -e "drop database if exist belajar"
+  - mysql -e "create database if not exists belajar"
